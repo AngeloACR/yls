@@ -112,16 +112,16 @@ FormularioSchema.statics = {
       let length = formularios.length;
       let resultados = formularios.reduce(
         (resultados, formulario) => {
-          resultados.canciones1 += formulario.canciones1 / length;
-          resultados.canciones2 += formulario.canciones2 / length;
-          resultados.canciones3 += formulario.canciones3 / length;
-          resultados.canciones4 += formulario.canciones4 / length;
-          resultados.canciones5 += formulario.canciones5 / length;
-          resultados.canciones6 += formulario.canciones6 / length;
-          resultados.canciones7 += formulario.canciones7 / length;
-          resultados.canciones8 += formulario.canciones8 / length;
-          resultados.canciones9 += formulario.canciones9 / length;
-          resultados.canciones10 += formulario.canciones10 / length;
+          resultados.cancion1 += formulario.cancion1 / length;
+          resultados.cancion2 += formulario.cancion2 / length;
+          resultados.cancion3 += formulario.cancion3 / length;
+          resultados.cancion4 += formulario.cancion4 / length;
+          resultados.cancion5 += formulario.cancion5 / length;
+          resultados.cancion6 += formulario.cancion6 / length;
+          resultados.cancion7 += formulario.cancion7 / length;
+          resultados.cancion8 += formulario.cancion8 / length;
+          resultados.cancion9 += formulario.cancion9 / length;
+          resultados.cancion10 += formulario.cancion10 / length;
           return resultados;
         },
         {
