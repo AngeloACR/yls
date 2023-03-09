@@ -73,7 +73,6 @@ FormularioSchema.statics = {
       formulario.cancion8 = resultados.cancion8;
       formulario.cancion9 = resultados.cancion9;
       formulario.cancion10 = resultados.cancion10;
-      formulario.cancion11 = resultados.cancion11;
       let result = await formulario.save();
       return result;
     } catch (e) {
@@ -123,7 +122,6 @@ FormularioSchema.statics = {
           resultados.canciones8 += formulario.canciones8 / length;
           resultados.canciones9 += formulario.canciones9 / length;
           resultados.canciones10 += formulario.canciones10 / length;
-          resultados.canciones11 += formulario.canciones11 / length;
           return resultados;
         },
         {
@@ -137,7 +135,6 @@ FormularioSchema.statics = {
           cancion8: 0,
           cancion9: 0,
           cancion10: 0,
-          cancion11: 0,
         }
       );
       return resultados;

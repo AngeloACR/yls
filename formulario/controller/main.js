@@ -1,7 +1,5 @@
 const Formularios = require("../models/main");
 
-/*************************** VENTA DE BOLETOS************************/
-
 const ventasController = {
   add: async (req, res) => {
     try {
