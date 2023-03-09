@@ -109,16 +109,16 @@ FormularioSchema.statics = {
   getResultados: async function (id) {
     try {
       let formularios = await this.find();
-      let cancion1Length = formularios.filter((f) => !!cancion1).length;
-      let cancion2Length = formularios.filter((f) => !!cancion2).length;
-      let cancion3Length = formularios.filter((f) => !!cancion3).length;
-      let cancion4Length = formularios.filter((f) => !!cancion4).length;
-      let cancion5Length = formularios.filter((f) => !!cancion5).length;
-      let cancion6Length = formularios.filter((f) => !!cancion6).length;
-      let cancion7Length = formularios.filter((f) => !!cancion7).length;
-      let cancion8Length = formularios.filter((f) => !!cancion8).length;
-      let cancion9Length = formularios.filter((f) => !!cancion9).length;
-      let cancion10Length = formularios.filter((f) => !!cancion10).length;
+      let cancion1Length = formularios.filter((formulario) => !!formulario.cancion1).length;
+      let cancion2Length = formularios.filter((formulario) => !!formulario.cancion2).length;
+      let cancion3Length = formularios.filter((formulario) => !!formulario.cancion3).length;
+      let cancion4Length = formularios.filter((formulario) => !!formulario.cancion4).length;
+      let cancion5Length = formularios.filter((formulario) => !!formulario.cancion5).length;
+      let cancion6Length = formularios.filter((formulario) => !!formulario.cancion6).length;
+      let cancion7Length = formularios.filter((formulario) => !!formulario.cancion7).length;
+      let cancion8Length = formularios.filter((formulario) => !!formulario.cancion8).length;
+      let cancion9Length = formularios.filter((formulario) => !!formulario.cancion9).length;
+      let cancion10Length = formularios.filter((formulario) => !!formulario.cancion10).length;
       let resultados = formularios.reduce(
         (resultados, formulario) => {
           resultados.cancion1 += formulario.cancion1 / cancion1Length;
