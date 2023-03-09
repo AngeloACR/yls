@@ -1,0 +1,20 @@
+{
+  "name": "ylsserver",
+  "version": "1.0.0",
+  "description": "Servidor para administrar formulario de la listening session",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "body-parser": "*",
+    "compression": "^1.7.0",
+    "cors": "*",
+    "express": "*",
+    "helmet": "^3.9.0",
+    "mongoose": "*"
+  },
+  "author": "Tecnobunker",
+  "license": "ISC"
+}
