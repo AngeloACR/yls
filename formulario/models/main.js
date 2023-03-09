@@ -109,19 +109,28 @@ FormularioSchema.statics = {
   getResultados: async function (id) {
     try {
       let formularios = await this.find();
-      let length = formularios.length;
+      let cancion1Length = formularios.filter((f) => !!cancion1).length;
+      let cancion2Length = formularios.filter((f) => !!cancion2).length;
+      let cancion3Length = formularios.filter((f) => !!cancion3).length;
+      let cancion4Length = formularios.filter((f) => !!cancion4).length;
+      let cancion5Length = formularios.filter((f) => !!cancion5).length;
+      let cancion6Length = formularios.filter((f) => !!cancion6).length;
+      let cancion7Length = formularios.filter((f) => !!cancion7).length;
+      let cancion8Length = formularios.filter((f) => !!cancion8).length;
+      let cancion9Length = formularios.filter((f) => !!cancion9).length;
+      let cancion10Length = formularios.filter((f) => !!cancion10).length;
       let resultados = formularios.reduce(
         (resultados, formulario) => {
-          resultados.cancion1 += formulario.cancion1 / length;
-          resultados.cancion2 += formulario.cancion2 / length;
-          resultados.cancion3 += formulario.cancion3 / length;
-          resultados.cancion4 += formulario.cancion4 / length;
-          resultados.cancion5 += formulario.cancion5 / length;
-          resultados.cancion6 += formulario.cancion6 / length;
-          resultados.cancion7 += formulario.cancion7 / length;
-          resultados.cancion8 += formulario.cancion8 / length;
-          resultados.cancion9 += formulario.cancion9 / length;
-          resultados.cancion10 += formulario.cancion10 / length;
+          resultados.cancion1 += formulario.cancion1 / cancion1Length;
+          resultados.cancion2 += formulario.cancion2 / cancion2Length;
+          resultados.cancion3 += formulario.cancion3 / cancion3Length;
+          resultados.cancion4 += formulario.cancion4 / cancion4Length;
+          resultados.cancion5 += formulario.cancion5 / cancion5Length;
+          resultados.cancion6 += formulario.cancion6 / cancion6Length;
+          resultados.cancion7 += formulario.cancion7 / cancion7Length;
+          resultados.cancion8 += formulario.cancion8 / cancion8Length;
+          resultados.cancion9 += formulario.cancion9 / cancion9Length;
+          resultados.cancion10 += formulario.cancion10 / cancion10Length;
           return resultados;
         },
         {
